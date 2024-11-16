@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DJS-Wallstreet-Pro Core\n"
+"POT-Creation-Date: 2024-11-14 16:47+0100\n"
+"PO-Revision-Date: 2024-11-14 16:48+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: core.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: classes/djs_base.php:56 classes/djs_base.php:61
+msgid "Cheatin&#8217; huh?"
+msgstr "Sie schummeln&#8217; oder?"
+
+#: classes/djs_base.php:100
+#, php-format
+msgid "Could not find language file %s/%s-%s.mo."
+msgstr "Sprachdatei %s/%s-%s.mo konnte nicht gefunden werden."
+
+#: functions.php:20
+#, php-format
+msgid "%s detected a conflict; please deactivate the plugin located in %s."
+msgstr ""
+"%s hat einen Konflikt festgestellt; Bitte deaktivieren Sie das Plugin in "
+"%s."
+
+#. Plugin Name of the plugin/theme
+msgid "DJS-Wallstreet-Pro Core"
+msgstr "DJS-Wallstreet-Pro Core"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/DSchuppelius/djs-wallstreet-pro-core"
+msgstr "https://github.com/DSchuppelius/djs-wallstreet-pro-core"
+
+#. Description of the plugin/theme
+msgid ""
+"Core plugin for DJS-Wallstreet-Pro theme and extensions. Provides shared "
+"functionalities and the DJS_Base class."
+msgstr ""
+"Core-Plugin für DJS-Wallstreet-Pro Theme und Erweiterungen. Bietet "
+"gemeinsame Funktionen und die DJS_Base Klasse."
+
+#. Author of the plugin/theme
+msgid "Daniel Jörg Schuppelius"
+msgstr "Daniel Jörg Schuppelius"
+
+#. Author URI of the plugin/theme
+msgid "https://schuppelius.org"
+msgstr "https://schuppelius.org/"

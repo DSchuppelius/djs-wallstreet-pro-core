@@ -1,0 +1,7 @@
+# Ignore IDE folders
+.github/
+.vs/
+
+# Ignore IDE files
+.editorconfig
+.prettierrc
