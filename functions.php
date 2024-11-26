@@ -24,8 +24,7 @@ if (!defined('DJS_CORE_PLUGIN_DIR')) {
 require_once DJS_CORE_PLUGIN_CLASSES_PATH . "djs_base.php";
 require_once DJS_CORE_PLUGIN_CLASSES_PATH . "djs_setup.php";
 
+require_once(DJS_CORE_PLUGIN_FUNCTIONS_PATH . "base/sanitizer_functions.php");
+require_once(DJS_CORE_PLUGIN_FUNCTIONS_PATH . "base/url_functions.php");
 require_once DJS_CORE_PLUGIN_FUNCTIONS_PATH . "base/web_functions.php";
-
-require_once(DJS_CORE_PLUGIN_FUNCTIONS_PATH . "plugin/plugin_functions.php");
-require_once(DJS_CORE_PLUGIN_FUNCTIONS_PATH . "plugin/plugin_sanitizer.php");
 ?>

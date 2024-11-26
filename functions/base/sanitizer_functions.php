@@ -3,7 +3,7 @@
  * Created on   : Thu Sep 29 2022
  * Author       : Daniel Jörg Schuppelius
  * Author Uri   : https://schuppelius.org
- * Filename     : plugin_sanitizer.php
+ * Filename     : sanitizer_functions.php
  * License      : GNU General Public License v3 or later
  * License Uri  : http://www.gnu.org/licenses/gpl.html
  */

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DJS-Wallstreet-Pro Core\n"
-"POT-Creation-Date: 2024-11-14 20:29+0100\n"
+"POT-Creation-Date: 2024-11-22 12:43+0100\n"
 "PO-Revision-Date: 2024-11-14 16:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,11 +21,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: classes/djs_base.php:61 classes/djs_base.php:66
+#: classes/djs_base.php:59 classes/djs_base.php:64
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: classes/djs_base.php:105
+#: classes/djs_base.php:103
 #, php-format
 msgid "Could not find language file %s/%s-%s.mo."
 msgstr ""
