@@ -17,7 +17,7 @@ defined('ABSPATH') or die('Hm, Are you ok?');
 require_once "functions.php";
 require_once "create_mu_plugin.php";
 
-if (!class_exists('DJS_Wallstreet_Pro_Extensions')) {
+if (!class_exists('DJS_Wallstreet_Pro_Core')) {
     final class DJS_Wallstreet_Pro_Core extends DJS_Base {
         // @return plugin|null
         public static function instance() {
