@@ -92,7 +92,7 @@ if(!class_exists('DJS_Base')) {
 
         // Load plugin textdomain.
         public function load_plugin_textdomain() {
-            $path = basename(dirname($this->file)) . "/functions/lang";
+            $path = basename(dirname($this->file)) . "/languages";
             $result = load_plugin_textdomain($this->plugin_name, false, $path);
 
             if(defined('WP_DEBUG'))
