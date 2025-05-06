@@ -35,6 +35,8 @@ if(!class_exists('DJS_Setup')) {
             return $result;
         }
 
+        abstract public static function instance();
+
         // @return initial_setup|null
         abstract protected function get_initial_setup();
 

@@ -10,7 +10,7 @@ Author URI: https://schuppelius.org
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Text Domain: djs-wallstreet-pro-core
-Domain Path: /functions/lang/
+Domain Path: /languages/
 */
 defined('ABSPATH') or die('Hm, Are you ok?');
 
@@ -19,21 +19,22 @@ require_once "create_mu_plugin.php";
 
 if (!class_exists('DJS_Wallstreet_Pro_Core')) {
     final class DJS_Wallstreet_Pro_Core extends DJS_Base {
+        private static $instance = null;
+
         // @return plugin|null
         public static function instance() {
             // Store the instance locally to avoid private static replication
-            static $instance = null;
 
             // Only run these methods if they haven't been ran previously
-            if (null === $instance) {
-                $instance = new DJS_Wallstreet_Pro_Core();
-                $instance->setup_globals();
+            if (null === static::$instance) {
+                static::$instance = new DJS_Wallstreet_Pro_Core();
+                static::$instance->setup_globals();
 
-                add_action('plugins_loaded', [$instance, 'load_plugin_textdomain']);
+                add_action('plugins_loaded', [static::$instance, 'load_plugin_textdomain']);
             }
 
             // Always return the instance
-            return $instance;
+            return static::$instance;
         }
 
         protected function setup_globals() {
