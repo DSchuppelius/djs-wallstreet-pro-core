@@ -35,14 +35,35 @@ if(!class_exists('DJS_Setup')) {
             return $result;
         }
 
-        abstract public static function instance();
-
         // @return initial_setup|null
         abstract protected function get_initial_setup();
+        abstract protected function get_translated_setup();
 
         protected function load_current_setup() {
             $this->data = $this->get_initial_setup();
             $this->current_data = $this->get_current_setup();
+            if (did_action('init')) {
+                $this->apply_translations();
+            } else {
+                add_action('init', [$this, 'apply_translations']);
+            }
+        }
+
+        public function apply_translations() {
+            if ($this->translations_applied) return;
+
+            $translations = $this->get_translated_setup();
+
+            foreach ($translations as $key => $value) {
+                if (isset($this->data[$key])) {
+                    $this->data[$key] = $value;
+                }
+                if (isset($this->current_data[$key])) {
+                    $this->current_data[$key] = $value;
+                }
+            }
+
+            $this->translations_applied = true;
         }
 
         public function get_current_setup() {
