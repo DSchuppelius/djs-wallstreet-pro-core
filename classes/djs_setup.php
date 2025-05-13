@@ -41,12 +41,14 @@ if(!class_exists('DJS_Setup')) {
 
         protected function load_current_setup() {
             $this->data = $this->get_initial_setup();
-            $this->current_data = $this->get_current_setup();
-            if (did_action('init')) {
+
+            if ($this->is_safe_to_translate()) {
                 $this->apply_translations();
             } else {
-                add_action('init', [$this, 'apply_translations']);
+                add_action('after_setup_theme', [$this, 'apply_translations'], 20);
             }
+
+            $this->current_data = $this->get_current_setup();
         }
 
         public function apply_translations() {
@@ -64,6 +66,10 @@ if(!class_exists('DJS_Setup')) {
             }
 
             $this->translations_applied = true;
+        }
+
+        protected function is_safe_to_translate(): bool {
+            return is_admin() || did_action('init') || did_action('after_setup_theme');
         }
 
         public function get_current_setup() {
