@@ -27,4 +27,9 @@ require_once DJS_CORE_PLUGIN_CLASSES_PATH . "djs_setup.php";
 require_once(DJS_CORE_PLUGIN_FUNCTIONS_PATH . "base/sanitizer_functions.php");
 require_once(DJS_CORE_PLUGIN_FUNCTIONS_PATH . "base/url_functions.php");
 require_once DJS_CORE_PLUGIN_FUNCTIONS_PATH . "base/web_functions.php";
+
+require_once DJS_CORE_PLUGIN_FUNCTIONS_PATH . "coloring/checkcolor_functions.php";
+require_once DJS_CORE_PLUGIN_FUNCTIONS_PATH . "coloring/colorstring_functions.php";
+
+require_once DJS_CORE_PLUGIN_FUNCTIONS_PATH . "theme/theme_functions.php";
 ?>
